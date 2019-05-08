@@ -1,20 +1,19 @@
-body {
-    box-sizing: border-box;
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-}
-
 .hide {
     display: none;
 }
 
 header {
+    z-index: 1;
     background-color: black;
+    position: relative;
+    position: fixed;
+    top: 0;
+    width: 90%;
 
     .headerLogo img {
-        width: 20vw;
+        width: 15vw;
         height: auto;
+        margin-left: 50px;
     }
     .navigation {
         text-align: center;
@@ -37,18 +36,19 @@ header {
     }
     .hamburger {
         cursor: pointer;
-        position: fixed;
-        top:30px;
+        position: absolute;
+        top: 20%;
         right: 30px;
-        width: 5vw;
-        height: 45px;
-        min-width: 40px;
+        width: 10%;
+        height: 30px;
+        min-width: 30px;
         transition: .2s;
+        max-width: 40px;
 
         span {
             position: absolute;
             width: 100%;
-            height: 1em;
+            height: .7em;
             background-color: #fff;
             left: 0;
             transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .2s .4s;
@@ -57,7 +57,7 @@ header {
             top: 0;
         }
         .line2 {
-            top: calc(50% - .5em);
+            top: calc(50% - .4em);
         }
         .line3 {
             bottom: 0;
@@ -70,14 +70,14 @@ header {
     }
 
     .hamburger.active .line1 {
-        top: calc(50% - .5em);
+        top: calc(50% - .3em);
         transform: rotate(45deg);
     }
     .hamburger.active .line2 {
         opacity: 0;
     }
     .hamburger.active .line3 {
-        bottom: calc(50% - .5em);
+        bottom: calc(50% - .3em);
         transform: rotate(-45deg);
     }
 }

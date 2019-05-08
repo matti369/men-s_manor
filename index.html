@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header>
         <div class="headerLogo">
@@ -20,27 +22,53 @@
         </div>
         <div class="navigation hide">
             <ul>
-                <li><a href="#">Usługi</a></li>
+                <li><a href=".youTubeMovie">Usługi</a></li>
                 <li><a href="#">Realizacje</a></li>
                 <li><a href="#">Nasza Kolekcja</a></li>
                 <li><a href="#">Szkolenia</a></li>
                 <li><a href="#">Nasz Zespół</a></li>
-        </ul>
+            </ul>
         </div>
 
     </header>
     <main class="wrapper">
         <div class="slider">
-
+            <!-- Może coś na zdjęciu umieścić... -->
         </div>
         <div class="gallery">
-
+            <div class="row">
+                <div class="column">
+                    <img src="images/gallery/gallery1.jpg" alt="fajno fajno" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/gallery/gallery2.jpg" alt="tra la la la al" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/gallery/gallery3.jpg"
+                        alt="ala ma kota a kot ma alęala ma kota a kot ma alęala ma kota a kot ma t ma alę"
+                        onclick="myFunction(this);">
+                </div>
+            </div>
         </div>
-        <div class="services">
 
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+            <img id="expandedImg">
+
+            <div id="imgtext"></div>
         </div>
-        <div class="map">
 
+        <div class="services"></div>
+
+        <div class="youTubeMovie">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lEuRrhEUr2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <aside><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eaque perferendis harum ipsum, laboriosam pariatur quidem mollitia maiores cumque et, quaerat atque laudantium saepe nam similique, modi dolor voluptate fuga.</p></aside>
+        
+        <div class="googleMap"><iframe
+                src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Motylkowa%204a%20Wroc%C5%82aw+(Men%5C's%20Manor)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
     </main>
     <footer>
@@ -54,4 +82,5 @@
     </footer>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
