@@ -1,5 +1,44 @@
 footer {
-    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
     background-color: black;
-    height: 20vw;
+    // height: 20vw;
+
+    .footerLogo {
+
+        img {
+            width: 15vw;
+            height: auto;
+        }
+
+    }
+
+    .socialMedia {
+
+        a {
+            color: #fff;
+            line-height: 15vw;
+            
+            i {
+                margin: 10px;
+                font-size: 3em;
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        p {
+            text-align: center;
+            color: #fff;
+            font-size: 1em;
+        }
+    }
+
+
 }

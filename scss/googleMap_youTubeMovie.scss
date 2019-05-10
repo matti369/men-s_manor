@@ -1,0 +1,20 @@
+.googleMap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 30vw;
+    margin-bottom: 2vh;
+
+    iframe {
+        width: 80%;
+        height: 100%;
+    }
+   
+}
+
+.youTubeMovie {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2vh;
+}

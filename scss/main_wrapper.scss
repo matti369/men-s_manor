@@ -1,16 +1,24 @@
 .slider {
+    margin: 0 auto;
     margin-top: 16vw;
     ;
     background-image: url("../images/default\ header.jpg");
     background-size: cover;
     height: 30vw;
-    width: 100%;
+    width: 90%;
     margin-bottom: 2vh;
 }
 
 .gallery {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
 }
 
 .column {
