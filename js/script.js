@@ -19,5 +19,16 @@ function myFunction(imgs) {
      expandImg.parentElement.style.display = "block";
    } 
 
+
+//-----------------------------Close promotion----------------------------
+
+const closeProm = document.querySelector(".closePromotion");
+closeProm.addEventListener("click", function() {
+     var promotion = document.querySelector(".promotion")
+     promotion.classList.add("hide");
+})
+
 //----------------------------------Scrolling to part---------------------
+
+
 
